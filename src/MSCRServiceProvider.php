@@ -4,7 +4,7 @@ namespace Jixk\MakeMscr;
 
 use Illuminate\Support\ServiceProvider;
 
-class CreateMscrServiceProvider extends ServiceProvider
+class MSCRServiceProvider extends ServiceProvider
 {
     public function register()
     {
