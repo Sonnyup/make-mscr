@@ -1,0 +1,27 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Database\Eloquent\Model;
+
+class DummyClass extends BaseModel
+{
+    /**
+     * 表名绑定
+     * @var string
+     */
+    protected $table = 'DummyTableName';
+
+
+    /**
+     * 允许入库的字段
+     * @var array
+     */
+    //protected $fillable = [];
+
+    /**
+     * 不允许入库的字段 和$fillable存在一个即可
+     * @var array
+     */
+    protected $guarded = [];
+}
