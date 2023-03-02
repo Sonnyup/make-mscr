@@ -5,9 +5,7 @@
         "php": "^7.2.5|^8.0",
         "illuminate/contracts": "^7.0.0",
         "illuminate/support": "^7.0.0",
-        "symfony/deprecation-contracts": "^2.5.2",
         "symfony/console": "^5.0",
-        "symfony/process": "^5.0",
         "illuminate/database": "7.30.6"
     },
     "license": "MIT",
