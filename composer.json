@@ -1,7 +1,7 @@
 {
     "name": "jixk/make-mscr",
     "type": "library",
-    "description": "测试模块，请勿用于生产！！！MSCR手脚架，一键生成 Model、Service、Controller、Request类文件。",
+    "description": "测试模块，请勿用于生产！！！MSCR脚手架，一键生成 Model、Service、Controller、Request类文件。",
     "require": {
         "php": "^7.2.5|^8.0",
         "illuminate/console": "^6.0|^7.0",
