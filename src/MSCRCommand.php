@@ -119,6 +119,9 @@ class MSCRCommand extends Command
             $typeName = substr($type, 0, $pos);
             switch ($typeName) {
                 case 'int':
+                case 'bigint':
+                case 'tinyint':
+                case 'smallint':
                 case 'integer':
                 case 'float':
                 case 'double':
@@ -128,6 +131,9 @@ class MSCRCommand extends Command
                 case 'string':
                 case 'varchar':
                 case 'text':
+                case 'tinytext':
+                case 'longtext':
+                case 'char':
                     $rules[] = "'$field' => 'string|max:255'";
                     break;
                 case 'date':
