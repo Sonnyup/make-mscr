@@ -27,7 +27,7 @@ class MakeModelCommand extends GeneratorCommand
     protected function getPath($name)
     {
         $name = Str::replaceFirst($this->rootNamespace(), '', $name);
-        return $this->laravel['path'].'/'.str_replace('\\', '/', Str::studly($name)).'.php';
+        return $this->laravel['path'].'/'.str_replace('\\', '/', str_replace(class_basename($name), Str::studly(class_basename($name)), $name)).'.php';
     }
 
     protected function getDefaultNamespace($rootNamespace)
